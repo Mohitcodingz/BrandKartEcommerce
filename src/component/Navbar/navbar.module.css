@@ -1,0 +1,21 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px; 
+  box-sizing: border-box;  
+  background-color: #0f172a;  
+  color: white; 
+}
+
+/* This is the new block that separates your links! */
+.rightSide {
+  display: flex;
+  gap: 30px; /* Creates exactly 30px of space between each link */
+  align-items: center;
+}
+.rightSide a{
+    color: white;
+    text-decoration: none;
+}
