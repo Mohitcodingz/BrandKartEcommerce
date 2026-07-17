@@ -10,7 +10,7 @@ export default function Navbar() {
                 <a href="#Shop">Shop</a>
                 <a href="#Category">Category</a>
                 <a href="#Cart">Cart</a>
-                <a href="#Login">Login</a>
+                <a href="#User">User</a>
             </div>
         </div>
 
