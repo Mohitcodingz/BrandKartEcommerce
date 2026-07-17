@@ -1,5 +1,5 @@
 /* Container layout to hold the product grid */
-.product-container {
+.productContainer {
   display: grid;
   /* Automatically fits as many cards as possible, minimum 280px wide each */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -11,16 +11,17 @@
 }
 
 /* Base card structure */
-.product-id {
+.productId {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 16px;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 /* Keeps your product images uniform and prevents distortion */
-.product-id img {
+.productId img {
   width: 100%;
   height: 250px;
   object-fit: cover; /* Crops the image neatly without squishing it */
@@ -28,7 +29,7 @@
 }
 
 /* Pushes the price to the bottom if the descriptions are uneven lengths */
-.product-id p:last-of-type {
+.productId p:last-of-type {
   margin-top: auto;
   font-weight: bold;
 }

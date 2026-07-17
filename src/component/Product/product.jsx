@@ -24,14 +24,29 @@ const products = [
     heading: "Shirt made with bear's skin",
     desc: "LOREM 3",
     price: "$55"
+  },
+  {
+    id: 4,
+    img: productImage1,
+    heading: "Shirt made with wolf's skin",
+    desc: "LOREM 4",
+    price: "$35"
+  },
+  {
+    id: 5,
+    img: productImage2,
+    heading: "Shirt made with duck's skin",
+    desc: "LOREM 5",
+    price: "$25"
   }
 ]
 
 export default function Product() {
   return (
-    <div className={styles['product-container']}>
+    <div className={styles.productContainer}>
+   <h1 className={styles.heading} >Product Page</h1>
       {products.map((e) => (
-        <div key={e.id} className={styles['product-id']}>
+        <div key={e.id} className={styles.productId}>
           <img src={e.img} alt={e.heading} />
           <h3>{e.heading}</h3>
           <p>{e.desc}</p>

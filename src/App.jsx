@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Navbar />
-        <img src={img1} alt="banner"/>
+        <img src={img1} alt="banner" />
         <Product />
       </BrowserRouter>
     </div>
