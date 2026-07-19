@@ -51,7 +51,7 @@ const products = [
 export default function Product() {
   return (
     <div className={styles.productPage}>
-   <h1 className={styles.heading} >Prouct Page</h1>
+   <h1 className={styles.heading} >Product Page</h1>
    <div className={styles.productContanier}>
 
       {products.map((e) => (

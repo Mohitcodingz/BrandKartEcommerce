@@ -1,16 +1,19 @@
-import Navbar from './component/Navbar/navbar'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import img1 from './assets/img1.png'
-import Product from './component/Product/Product'
+import Home from './Pages/Home/home'
+import User from './component/User/user'
+import Navbar from './component/Navbar/navbar'
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
         <Navbar />
-        <img src={img1} alt="banner" />
-        <Product />
+        <Routes>
+
+          <Route path='/Home' element={<Home />}/>
+          <Route path='/user' element={<User />} />
+        </Routes>
       </BrowserRouter>
     </div>
   )
