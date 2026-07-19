@@ -1,3 +1,7 @@
+:root{
+--primaryColor:white;
+--secondaryColor:black;
+}
 .navbar {
   width: 100%;
   display: flex;
@@ -8,11 +12,15 @@
   background-color: #0f172a;  
   color: white; 
 }
-
-/* This is the new block that separates your links! */
+a{
+  text-decoration: none;
+  color: white;
+  color: var(--primaryColor);
+}
+ 
 .rightSide {
   display: flex;
-  gap: 30px; /* Creates exactly 30px of space between each link */
+  gap: 30px; 
   align-items: center;
 }
 .rightSide a{

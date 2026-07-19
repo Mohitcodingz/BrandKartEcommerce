@@ -59,7 +59,7 @@ export default function Product() {
           <img src={e.img} alt={e.heading} />
           <h3>{e.heading}</h3>
           <p>{e.desc}</p>
-          <p>{e.price}</p>
+          <p>{e.price}</p>  
         </div>
       ))}
       </div>
