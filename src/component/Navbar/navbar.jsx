@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './navbar.module.css'
 export default function Navbar() {
     return (
@@ -6,12 +7,10 @@ export default function Navbar() {
                 BRANDKART
             </div>
             <div className={styles.rightSide}>
-                <a href="#Shop">Shop</a>
-                <a href="#Category">Category</a>
-                <a href="#Cart">Cart</a>
-                <a href="#User">User</a>
+                <Link to="/Shop">Shop</Link> 
+                <Link to="/Category">Category</Link> 
+                <Link to="/user">User</Link>                  
             </div>
         </div>
-
     )
 }
