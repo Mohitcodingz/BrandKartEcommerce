@@ -43,8 +43,10 @@ const products = [
 
 export default function Product() {
   return (
-    <div className={styles.productContainer}>
-   <h1 className={styles.heading} >Product Page</h1>
+    <div className={styles.productPage}>
+   <h1 className={styles.heading} >ProCa\\ssgsduct Page</h1>
+   <div className={styles.productContanier}>
+
       {products.map((e) => (
         <div key={e.id} className={styles.productId}>
           <img src={e.img} alt={e.heading} />
@@ -53,6 +55,7 @@ export default function Product() {
           <p>{e.price}</p>
         </div>
       ))}
+      </div>
     </div>
   )
 }
