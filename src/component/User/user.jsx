@@ -1,19 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import styles from './user.module.css'
+import Login from '../Login/Login'
+import Register from '../Register/register';
 export default function User() {
+  const [value,setValue ] = useState(true);
   return (
     <div className={styles.userContainer}>
-    <div className={styles.userContainerInner}>
-      <h1>Member Login</h1>
-      <form action="/get">
-        <input type="text" placeholder='Username' />
-        <input type="password" placeholder='Password' />
-        <button>Login</button>
-        <p>Forget Password? <Link to="/">Click Here</Link> </p>
-        <button>Register</button>
-      </form>
-    </div>
+
+     {
+      value ?
+      <Login onRegister={()=>setValue(false)}/>:
+      <Register onLogin={()=>setValue(true)}/>
+     }
     </div>
   )
 }
