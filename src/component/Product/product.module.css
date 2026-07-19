@@ -1,35 +1,9 @@
-/* Container layout to hold the product grid */
-.productContainer {
-  display: grid;
-  /* Automatically fits as many cards as possible, minimum 280px wide each */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-/* Base card structure */
-.productId {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 16px;
-  box-sizing: border-box;
+.productId{
+  width: 200px;
+  height: 200px;
   border: 1px solid black;
 }
-
-/* Keeps your product images uniform and prevents distortion */
-.productId img {
+.heading{
   width: 100%;
-  height: 250px;
-  object-fit: cover; /* Crops the image neatly without squishing it */
-  display: block;
-}
-
-/* Pushes the price to the bottom if the descriptions are uneven lengths */
-.productId p:last-of-type {
-  margin-top: auto;
-  font-weight: bold;
+  text-align: center;
 }
