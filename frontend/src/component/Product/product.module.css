@@ -1,0 +1,27 @@
+.productId{
+  width: 200px;
+  height: 200px;
+}
+.productPage{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.productContanier{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.heading{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+.productId{
+  width: 200px;
+  height:200px;
+}
+.productId img{
+  width: 100%;
+  height: 80%;
+ object-fit:cover;
+}

@@ -1,0 +1,15 @@
+/* Reset default browser spacing and ensure images are responsive */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}

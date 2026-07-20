@@ -1,0 +1,29 @@
+:root{
+--primaryColor:white;
+--secondaryColor:black;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px; 
+  box-sizing: border-box;  
+  background-color: #0f172a;  
+  color: white; 
+}
+a{
+  text-decoration: none;
+  color: white;
+  color: var(--primaryColor);
+}
+ 
+.rightSide {
+  display: flex;
+  gap: 30px; 
+  align-items: center;
+}
+.rightSide a{
+    color: white;
+    text-decoration: none;
+}
