@@ -1,6 +1,7 @@
-import React from "react";
 import styles from "./register.module.css";
 import { useState } from "react";
+import axios from "axios";
+
 export default function Register({ onLogin }) {
   const [user, setUser] = useState({ email: "", password: "", username: "" });
 
@@ -33,6 +34,7 @@ export default function Register({ onLogin }) {
             onChange={(e) => setUser({ ...user, password: e.target.value })}
           />
           <button onClick={checkData}> Register</button>
+          <button onClick={registerUser}> Register User</button>
           <button onClick={onLogin}> Login</button>
         </form>
       </div>

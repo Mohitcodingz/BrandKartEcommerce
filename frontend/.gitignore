@@ -1,7 +1,0 @@
-.log
-.vscode/
-.build/
-.cors/
-node_modules/
-.env/
-.dist/

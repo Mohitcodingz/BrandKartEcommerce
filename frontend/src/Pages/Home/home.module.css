@@ -14,8 +14,26 @@ body {
   overflow-x: hidden;
 }
 
-img {
+.banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.banner img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+._navbar_l7xua_9 {
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+._productContanier_1lzml_19 {
+  min-width: 0;
 }
